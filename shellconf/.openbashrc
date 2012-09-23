@@ -1,0 +1,31 @@
+#システム変数設定
+HOME_BIN="~/bin"
+PATH=$HOME_BIN:$PATH
+
+export CLASSPATH=.:~/java:~/java/packsample
+
+#export ruby
+export RI="--format ansi --width 70"
+
+#cpp option
+#export CPPFLAGS="-I /usr/include"
+#export LDFLAGS="-L /usr/lib"
+
+#export
+alias vi="vim"
+alias ll="ls -l"
+alias ctags_php="ctags -R --langmap=PHP:php.inc --php-types=c+f+d+v"
+alias ctags_java_jdk="ctags -f ~/.tags/java -R $JAVA_HOME/src "
+
+#prompt
+PS1="[\u@\h \W]\\$ "
+
+function ssh_screen(){
+	eval server=${*%%.*}
+	echo $server
+	screen -U -t $server ssh "$@"
+}
+
+if [ $TERM = screen ] ; then
+  alias ssh=ssh_screen
+fi

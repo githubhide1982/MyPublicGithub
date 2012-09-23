@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/hide'
+let g:netrw_dirhist_2='/Users'
+let g:netrw_dirhist_3='/'
+let g:netrw_dirhist_4='/etc'
+let g:netrw_dirhist_5='/etc/apache2'
+let g:netrw_dirhist_6='/etc/apache2/other'
+let g:netrw_dirhist_7='/Users/hide/Desktop/httpd/conf.d'
+let g:netrw_dirhist_8='/Users/hide/Desktop/SMB/template'
